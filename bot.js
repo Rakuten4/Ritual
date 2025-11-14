@@ -4,7 +4,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const Database = require('./database/db');
 
-const BOT_TOKEN = 'MTQzODY1OTIyNDQxNzczNDc3OQ.G0gDs_.MD1zpKHvse2Db-os9Cihe-dfmgwVB0iI0zBB9c';
+const BOT_TOKEN = 'MTQzODY1OTIyNDQxNzczNDc3OQ.G_yYJc.vMHWTs71S2BJ61rssQeY0V01hDVsX1amt4TnWs';
 const GUILD_ID = '1210468736205852672';
 
 const client = new Client({
