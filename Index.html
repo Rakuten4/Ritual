@@ -22,17 +22,9 @@
             overflow-x: hidden;
         }
 
+        /* Make background fully black and remove decorative glows */
         body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(138, 43, 226, 0.4) 0%, rgba(138, 43, 226, 0.2) 40%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 0;
+            display: none !important;
         }
 
         .container {
@@ -394,28 +386,11 @@
             text-decoration: underline;
         }
 
-        /* Decorative elements */
-        .glow {
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.15;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .glow-1 {
-            background: #5865f2;
-            top: -200px;
-            right: -200px;
-        }
-
+        /* Remove decorative glows so background stays pure black */
+        .glow,
+        .glow-1,
         .glow-2 {
-            background: #5865f2;
-            bottom: -200px;
-            left: -200px;
+            display: none !important;
         }
 
         @media (max-width: 768px) {
